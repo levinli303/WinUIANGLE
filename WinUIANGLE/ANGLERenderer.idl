@@ -1,0 +1,13 @@
+﻿namespace WinUIANGLE
+{
+    [default_interface]
+    runtimeclass ANGLERenderer
+    {
+        ANGLERenderer(Boolean enableMultisample);
+        void Start();
+        void Stop();
+        void Pause();
+        void Resume();
+        void SetSurface(Microsoft.UI.Xaml.Controls.SwapChainPanel surface, Single scale);
+    }
+}
